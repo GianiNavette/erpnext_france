@@ -90,7 +90,7 @@ def get_result_as_list(data, company):
 
 	# Journal dict
 	journal_dict = {}
-	journal_list = frappe.db.get_all("Mode of Payment Account",  filters=[["company", "=", company]], fields=['journal_code', 'journal_label'])
+	journal_list = frappe.db.get_all("Mode of Payment Account",  filters=[["company", "=", company], ["journal_code", "!=", ""]], fields=['journal_code','journal_label'])
 	for i, elt in enumerate(journal_list):
 		journal_dict[elt["journal_code"]] = elt["journal_label"]
 

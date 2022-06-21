@@ -30,6 +30,7 @@ fixtures = [
                                     "Company-discount_supplier_account",
                                     "Fiscal Year Company-export_fec",
                                     "Mode of Payment Account-journal_label",
+                                    "Mode of Payment Account-journal_code",
                                     "Mode of Payment Account-discount_supplier_account")],
                     ]
     },
