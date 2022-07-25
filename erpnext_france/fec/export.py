@@ -28,7 +28,7 @@ def export_csv(company_name, fiscal_year):
 
 	# generate  data
 	f = StringIO()
-	writer = csv.writer(f,delimiter = u'\t'.encode('utf8'))
+	writer = csv.writer(f, delimiter='\t'.encode('utf8'))
 	for r in data:
 		# encode only unicode type strings and not int, floats etc.
 		writer.writerow(map(lambda v: isinstance(v, text_type) and v.encode('utf-8') or v, r))
